@@ -1,0 +1,296 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Amaranth', sans-serif;
+}
+html{
+    scroll-behavior: smooth;
+}
+
+/* draw borders of each bar before to know the size of each section */
+/* if you want before image to be set at that parent size only make parent position relative */
+
+
+/* NAVBAR */
+.navbar {
+    display: flex;
+    position: sticky;
+    top: 0;
+    left: 0;
+    /* position: relative; */
+    height: 75px;
+    align-items: center;
+}
+
+.logo img {
+    height: 70px;
+    width: 70px;
+    margin: 2px 10px;
+}
+
+.navbar ul {
+    display: block;
+    margin: auto;
+    display: flex;
+}
+
+.navbar ul li {
+    list-style: none;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    padding: 0px 29px;
+    color: white;
+    font-size: .9rem;
+    font-weight: bolder;
+}
+
+.navbar ul li a:hover {
+    background-color: white;
+    color: black;
+    border-radius: 18px;
+    padding: 4px 18px;
+}
+
+.navbar::before {
+    content: "";
+    position: absolute;
+    background-color: black;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    opacity: .5;
+}
+
+
+/* MAIN BODY */
+
+
+.container {
+    height: 460px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.container h2 {
+    text-align: center;
+    padding: 12px 8px;
+}
+
+.container p {
+    text-align: center;
+    padding: 18px 216px;
+}
+
+.bts {
+    padding: 6px 10px;
+    border: none;
+    border-radius: 23px;
+    font-size: .8rem;
+    color: black;
+
+}
+
+.bts:hover {
+    background-color: black;
+    color: white;
+    cursor: pointer;
+
+}
+
+/* to solve this image issue you are keep talking about, if image is getting destroyed every time in responsive kuch aur vaise kuch aur set the height in pixel */
+.container::before {
+    content: "";
+    position: absolute;
+    background: url("./backgroundimg/spaghetti-1932466.jpg") no-repeat center center/cover;
+    top: 0;
+    left: 0;
+    height: 537px;
+    width: 100%;
+    z-index: -1;
+    opacity: .8;
+}
+
+
+/* SERVICES SECTION */
+
+
+#services h1 {
+    text-align: center;
+    font-size: 1.5rem;
+    margin-top: 10px;
+}
+
+ #services .item {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 34px;
+}
+
+ #services .box {
+    margin: 3px 54px;
+    border-radius: 23px;
+    padding: 3px 9px;
+    height: 320px;
+    background-color: rgb(241, 232, 219);
+    box-shadow: 9px 10px 8px rgb(241, 232, 219);
+}
+
+#services .box img {
+    height: 130px;
+    width: 200px;
+    display: block;
+    margin: auto;
+    padding: 18px 1px;
+}
+
+#services .box h3 {
+    text-align: center;
+}
+
+#services .box p {
+    text-align: center;
+    margin-top: 4px;
+}
+
+
+/* CLIENTS SECTION */
+#clients {
+    position: relative;
+    height: 300px;
+}
+
+#clients h2 {
+    text-align: center;
+}
+
+.jobs {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 69px;
+    flex-wrap: wrap;
+}
+
+.jobs img {
+    height: 100px;
+    width: 100px;
+}
+
+#clients::before {
+    content: "";
+    position: absolute;
+    background: url("./backgroundimg/wheat-865152.jpg") no-repeat center center/cover;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: .6;
+}
+
+/* CONTACT */
+
+
+#contact {
+    position: relative;
+    height: 450px;
+}
+
+#contact h2 {
+    text-align: center;
+    color: rgb(42, 33, 33);
+}
+
+.filler {
+    display: flex;
+    justify-content: center;
+}
+
+.fill {
+    margin: 22px 4px;
+}
+
+.fill input {
+    padding-right: 200px;
+    padding-top: 5px;
+    padding-bottom: 3px;
+    padding-left: 7px;
+    border-radius: 18px;
+    border: none;
+}
+
+.fill textarea {
+    padding-right: 129px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    padding-left: 7px;
+    border-radius: 18px;
+    border: none;
+}
+
+.fill input[type="submit"] {
+    padding-right: 12px;
+    padding-top: 9px;
+    padding-bottom: 7px;
+    padding-left: 12px;
+    border-radius: 18px;
+    border: none;
+    font-size: .8rem;
+    display: block;
+    margin: auto;
+    cursor: pointer;
+}
+
+.fill input[type="submit"]:hover {
+    background-color: grey;
+    color: black;
+}
+
+#contact::before {
+    content: "";
+    position: absolute;
+    background: url("./backgroundimg/computer-2048166.jpg") no-repeat center center/cover;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: .7;
+}
+
+
+/* END */
+
+.end {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: rgb(64, 57, 57);
+    color: white;
+    height: 60px;
+}
+
+
+
+
+/* height dedi aur flex direction column kra responsive ke liye ya vaise bhi to agr flex direction column krke */
+/* size zyada aa raha hua to bahr nikl jega isliye size do hi mt , fr vo apne app adjust krlega */
+/* agr :before selector mei flex direction column krne wala ye scene ho raha hai to uske parent ko koi size mt do */
+/* :before depend hi saara parent pe krta , tum uski position relative rkho bs vo main hai , aur parent ki height */
+/* hatake agr tum flex direction column kroge to chahe tumhari cheeze badh bhi jaye column wise vo uske andr hi rahegi
+  /* because humne height nhi di bhai */ 
+
+
+
+
+
+
+
+
+
+
+

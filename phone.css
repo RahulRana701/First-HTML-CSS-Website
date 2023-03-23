@@ -1,0 +1,124 @@
+@media only screen and (max-width:1098px){
+    .navbar ul li a{
+        font-size: .7rem;
+    }
+    .navbar{
+        display: flex;
+        flex-direction: column;
+        height: 100px;
+    }
+    .jobs img {
+        height: 60px;
+        width: 67px;
+    }
+    .item{
+        flex-direction: column;
+    }
+    #services .box{
+        margin: 9px 325px;
+        height: 285px;
+    }
+    #services .box img {
+        height: 98px;
+        width: 158px;
+    }
+    #services h1 {
+        text-align: center;
+        font-size: 1.2rem;
+        margin-top: 10px;
+    }
+    #services .box h3 {
+        text-align: center;
+        font-size: 1rem;
+    }
+    #services .box p {
+        text-align: center;
+        margin-top: 4px;
+        font-size: .9rem;
+    }
+}
+@media only screen and (max-width:1027px){
+    #services .box {
+        margin: 9px 253px;
+        height: 300px;
+    }
+}
+@media only screen and (max-width:868px){
+    #services .box {
+        margin: 9px 253px;
+        height: 300px;
+    }
+}
+@media only screen and (max-width:841px){
+    #services .box {
+        margin: 9px 199px;
+        height: 300px;
+    }
+}
+@media only screen and (max-width:785px){
+    #services .box {
+        margin: 9px 199px;
+        height: 300px;
+    }
+}
+@media only screen and (max-width:687px){
+    #services .box {
+        margin: 9px 133px;
+        height: 300px;
+    }
+}
+@media only screen and (max-width:603px){
+    .navbar ul li a {
+        padding: 4px 13px;
+    }
+
+    .navbar ul li a:hover {
+        padding: 4px 13px;
+    }
+    .container h2 {
+        text-align: center;
+        padding: 7px 3px;
+        font-size: 1.1rem;
+    }
+    .container p {
+        text-align: center;
+        padding: 18px 15px;
+        font-size: 1rem;
+    }
+    #services .box {
+        margin: 9px 91px;
+        height: 300px;
+    }
+}
+@media only screen and (max-width:490px){
+    #services .box {
+        margin: 9px 76px;
+        height: 300px;
+    }
+    .jobs img {
+        height: 49px;
+        width: 50px;
+    }
+}
+@media only screen and (max-width:472px){
+    #services .box {
+        margin: 9px 30px;
+        height: 300px;
+    }
+}
+@media only screen and (max-width:387px){
+    .navbar ul li a {
+        padding: 2px 7px;
+        font-size: .6rem;
+    }
+
+    .navbar ul li a:hover {
+        padding: 2px 7px;
+    }
+    .fill input{
+        padding-right:53px ;
+    }
+    .fill textarea {
+        padding-right: 0px;
+    }
+}
